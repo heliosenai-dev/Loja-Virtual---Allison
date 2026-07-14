@@ -200,3 +200,5 @@ const produtos = [
     nome_secao: "Bomboniere"
   }
 ];
+
+export{produtos}
