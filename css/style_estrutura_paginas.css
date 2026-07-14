@@ -13,8 +13,10 @@
 :root{
     --cor_principal: #eec71b;
     --cor_botao01: #049d09;
-    --cor_lnk_menu: #ffffff;
+    --cor_lnk_menu: #020100;
     --cor_vermelha: #b60000;
+    --cor_suave: #c0ecee;
+    --cor_branca: #ffffff;
 }
 
 /*CONFIGURANDO A TAG main*/
@@ -31,17 +33,16 @@
 #cabecalho{
     width: 100%;
     height: 200px;
-    background-color: var(--cor_principal);
-    padding: 5px;
+    background-color: var(--cor_suave);
+    padding: 5px 100px;
     margin: 20px 0px;
     display: flex;
-    justify-content: center;
+    justify-content:space-between;
     align-items: center;
 }
 
 /*ALTERANDO O TAMANHO DA IMAGEM DO LOGO*/
 #logo img{
-    width: 250px;
     width: 180px;
     height: 160px;
 }
@@ -55,62 +56,40 @@
     justify-content: center;
 }
 
+
+
 /*CONFIGURANDO OS LI DO UL DO CABEÇALHO NA HORIZONTAL*/
 #cabecalho ul {
+#cabecalho ul, #menu-secoes {
     display: flex;
     list-style: none;
-    gap: 30px
-} 
-
-/*CONFIGURANDO OS TAMAHOS DOS ÍCONES*/
-#div-icones img{
-    width: 70px;
-    height: 60px;
+    gap: 30px;
+    height: 25px;
 }
 
-/*FORMATANDO OS MENUS*/
-#menu a:link{
-    font-size: 1.3em;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: var(--cor_lnk_menu);
-}
-
-#menu a:visited{
-    font-size: 1.3em;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: var(--cor_lnk_menu);
-}
-
-#menu a:hover{
-    font-size: 1.6em;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: var(--cor_botao01);
-}
-
-#menu a:active{
-    font-size: 1.3em;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: var(--cor_vermelha);
-}
-
-/*FORMATANDO section PELO ID PESQUISA */
-#pesquisa{
-    background-color: #049d09;
-    width: 1000px;
-    height: 180px;
+/*CONFIGURANDO O MENU SEÇÕES*/
+#nav-secoes{
+    width: 100%;
+    height: 80px;
+    margin: 20px 0px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#pesquisa input{
-    width: 600px;
-    height: 80px;
-    padding: 20px;
-    border-radius: 8px;
-    font-size: 2em;
+.lnk-secao:link, .lnk-secao:visited{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.3em;
+    letter-spacing: 3px;
+    color: var(--cor_vermelha);
 }
+
+.lnk-secao:hover {
+    font-size: 1.5em;
+    color: var(--cor_vermelha);
+}
+
+.lnk-secao:active {
+    color: var(--cor_principal);
+}}
