@@ -1,0 +1,115 @@
+/*IMPORTANDO A FONTE ROBOTO DO GOGOLE FONT*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*ATRIBUINDO EM TODOS OS ELEMENTOS*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: roboto;
+}
+
+/*CRIANDO VARIÁVEIS*/
+:root{
+    --cor_principal: #eec71b;
+    --cor_botao01: #049d09;
+    --cor_lnk_menu: #ffffff;
+    --cor_vermelha: #b60000;
+}
+
+/*CONFIGURANDO A TAG main*/
+#geral{
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*CONFIGUANDOO O CABEÇALHO DA PÁGINA*/
+#cabecalho{
+    width: 100%;
+    height: 200px;
+    background-color: var(--cor_principal);
+    padding: 5px;
+    margin: 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*ALTERANDO O TAMANHO DA IMAGEM DO LOGO*/
+#logo img{
+    width: 250px;
+    height: 160px;
+}
+
+/*CONFIGURANDO A TAG nav POR MEIO DO SEU ID*/
+#menu{
+    width: 750px;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*CONFIGURANDO OS LI DO UL DO CABEÇALHO NA HORIZONTAL*/
+#cabecalho ul {
+    display: flex;
+    list-style: none;
+    gap: 30px
+} 
+
+/*CONFIGURANDO OS TAMAHOS DOS ÍCONES*/
+#div-icones img{
+    width: 70px;
+    height: 60px;
+}
+
+/*FORMATANDO OS MENUS*/
+#menu a:link{
+    font-size: 1.3em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--cor_lnk_menu);
+}
+
+#menu a:visited{
+    font-size: 1.3em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--cor_lnk_menu);
+}
+
+#menu a:hover{
+    font-size: 1.6em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--cor_botao01);
+}
+
+#menu a:active{
+    font-size: 1.3em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--cor_vermelha);
+}
+
+/*FORMATANDO section PELO ID PESQUISA */
+#pesquisa{
+    background-color: #049d09;
+    width: 1000px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pesquisa input{
+    width: 600px;
+    height: 80px;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 2em;
+}
